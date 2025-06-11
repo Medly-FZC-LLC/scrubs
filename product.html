@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج - سكربز</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="slebot-logo.webp" alt="سكربز - ملابس طبية">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#products" class="active">المنتجات</a></li>
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="index.html#contact">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <a href="#cart" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <span class="separator">/</span>
+                <a href="index.html#products">المنتجات</a>
+                <span class="separator">/</span>
+                <span class="current-page" id="product-name">تفاصيل المنتج</span>
+            </div>
+
+            <div class="product-container">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-product-image" src="" alt="صورة المنتج">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1 id="product-title">اسم المنتج</h1>
+                    <div class="product-price" id="product-price">0 ريال</div>
+                    <div class="product-description">
+                        <p id="product-description">وصف المنتج سيظهر هنا. يتميز هذا المنتج بجودة عالية ومواد مريحة مناسبة للاستخدام اليومي في المجال الطبي.</p>
+                    </div>
+                    <div class="product-features">
+                        <h3>المميزات:</h3>
+                        <ul id="product-features">
+                            <li>قماش عالي الجودة</li>
+                            <li>مريح للاستخدام اليومي</li>
+                            <li>سهل التنظيف والعناية</li>
+                            <li>متوفر بعدة مقاسات</li>
+                        </ul>
+                    </div>
+                    <div class="product-size">
+                        <h3>اختر المقاس:</h3>
+                        <div class="size-options">
+                            <button class="size-btn">S</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn">L</button>
+                            <button class="size-btn">XL</button>
+                            <button class="size-btn">XXL</button>
+                        </div>
+                    </div>
+                    <div class="product-quantity">
+                        <h3>الكمية:</h3>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10" id="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">إضافة إلى السلة</button>
+                        <a href="https://api.whatsapp.com/send/?phone=971562457488&text=أرغب في الاستفسار عن المنتج:" class="whatsapp-inquiry" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            استفسر عبر واتساب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>منتجات ذات صلة</h2>
+                <div class="products-grid" id="related-products-container">
+                    <!-- Related products will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="slebot-logo.webp" alt="سكربز - ملابس طبية">
+                    <p>ملابس طبية عالية الجودة</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#products">المنتجات</a></li>
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="index.html#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>الامارات العربية المتحدة، الشارقة</p>
+                    <p><i class="fas fa-phone"></i> +971 562457488</p>
+                    <p><i class="fas fa-envelope"></i> info@slebot.com</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=971562457488&text&type=phone_number&app_absent=0" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 سكربز - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
