@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سكربز - ملابس طبية عالية الجودة</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,36 @@
                     </ul>
                 </nav>
                 <div class="header-buttons">
-                    <a href="#cart" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                    <!-- Currency Selector -->
+                    <div class="currency-selector-container">
+                        <select id="currency-selector" class="currency-selector">
+                            <option value="SAR">ر.س (ريال سعودي)</option>
+                            <option value="USD">$ (دولار أمريكي)</option>
+                            <option value="AED">د.إ (درهم إماراتي)</option>
+                        </select>
+                    </div>
+                    
+                    <!-- User not logged in elements -->
+                    <div class="user-not-logged-in auth-buttons">
+                        <a href="login.html" class="btn btn-sm">تسجيل الدخول</a>
+                        <a href="signup.html" class="btn btn-sm btn-primary">إنشاء حساب</a>
+                    </div>
+                    
+                    <!-- User logged in elements -->
+                    <div class="user-logged-in user-profile" style="display: none;">
+                        <button class="profile-btn">
+                            <i class="fas fa-user-circle"></i>
+                            <span class="username">اسم المستخدم</span>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="fas fa-user"></i> الملف الشخصي</a>
+                            <a href="#"><i class="fas fa-shopping-bag"></i> طلباتي</a>
+                            <a href="#"><i class="fas fa-heart"></i> المفضلة</a>
+                            <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a>
+                        </div>
+                    </div>
+                    
+                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
                 </div>
             </div>
         </div>
@@ -302,6 +333,10 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/currency.js"></script>
 </body>
 </html>
